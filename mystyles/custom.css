@@ -1,0 +1,18 @@
+/* File       : custom.css */
+/* Created    : Wed Aug 18 2021 01:59:17 PM (-0400) */
+/* Author     : Fabian Wermelinger */
+/* Description: Customizations */
+/* Copyright 2021 Fabian Wermelinger. All Rights Reserved. */
+
+html * {
+  background-color: white;
+}
+
+/* Own styles (does not work ok with animations) */
+/* code { */
+/*     border-radius: 5px; */ 
+/* } */
+
+/* blockquote { */
+/*     border-radius: 5px; */
+/* } */
