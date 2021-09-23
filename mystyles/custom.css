@@ -13,6 +13,10 @@
     text-align: left;
 }
 
+.adjust-right {
+    text-align: right;
+}
+
 .handson {
     text-align: left;
     border-color: #657b83;
@@ -54,6 +58,10 @@
 
 .reveal .slides code {
     padding: 5px; 
+}
+
+.reveal .slides div .highlight .MathJax_Display {
+    margin: 16px;
 }
 
 /* p .highlight { */
