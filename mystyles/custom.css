@@ -60,7 +60,11 @@
     padding: 5px; 
 }
 
-.reveal .slides div .highlight .MathJax_Display {
+.reveal .slides li {
+    margin-top: 8px; 
+}
+
+.reveal .slides div .MathJax_Display {
     margin: 12px;
 }
 
