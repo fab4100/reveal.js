@@ -68,6 +68,11 @@
     margin: 12px;
 }
 
+html.print-pdf .reveal pre code {
+    font-family: Inconsolata, "Inconsolata", monospace!important
+}
+
+
 /* p .highlight { */
 /*     padding: 5px; */
 /* } */
