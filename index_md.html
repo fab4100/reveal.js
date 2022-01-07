@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Presentation Title</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/solarized.css">
+        <link rel="stylesheet" href="mystyles/custom.css">
+
+        <!-- Theme used for syntax highlighted code -->
+        <!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
+        <link rel="stylesheet" href="mystyles/highlight/base16_monokai.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown="slides_index.md"
+                         data-separator="^H$"
+                         data-separator-vertical="^V$"
+                         data-separator-notes="^Note:"
+                         data-charset="utf-8">
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                center: false,
+                // disableLayout: true,
+                // showNotes: true,
+                // showSlideNumber: 'print',
+                pdfSeparateFragments: false,
+                hash: true,
+                math: {
+                      mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                      config: 'TeX-AMS_HTML-full',
+                      // pass other options into `MathJax.Hub.Config()`
+                      TeX: { 
+                        Macros: { RR: "{\\bf R}" },
+                        // equationNumbers: {
+                        // autoNumber: "AMS",
+                        // useLabelIds: true }
+                      }
+                    },
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,
+                                RevealMath, RevealZoom ]
+            });
+        </script>
+    </body>
+</html>
