@@ -107,4 +107,5 @@ html.print-pdf .reveal pre code {
     border-width: 4px;
     border-style: solid;
     border-radius: 3px;
+    font-size: 10pt;
 }
