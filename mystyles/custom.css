@@ -31,14 +31,22 @@
   --r-selection-color: #fff;
 }
 
+.tleft,
 .text-left,
 .adjust-left {
     text-align: left;
 }
 
-.text-left,
+.tright,
+.text-right,
 .adjust-right {
     text-align: right;
+}
+
+.tcenter,
+.text-center,
+.adjust-center {
+    text-align: center;
 }
 
 .handson {
@@ -60,12 +68,6 @@
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .column {
