@@ -164,21 +164,19 @@ double parallel_pi(const int n)
                 pdfSeparateFragments: false,
                 pdfMaxPagesPerSlide: 1,
                 hash: true,
-                math: {
-                      mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
-                      // mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-                      config: 'TeX-AMS_HTML-full',
-                      // pass other options into `MathJax.Hub.Config()`
-                      TeX: { 
-                        Macros: { RR: "{\\bf R}" },
-                        // equationNumbers: {
-                        // autoNumber: "AMS",
-                        // useLabelIds: true }
-                      }
-                    },
+                katex: {
+                   version: 'latest',
+                   delimiters: [
+                     {left: '$$', right: '$$', display: true},
+                     {left: '$', right: '$', display: false},
+                     {left: '\\(', right: '\\)', display: false},
+                     {left: '\\[', right: '\\]', display: true}
+                  ],
+                  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+                },
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,
-                                RevealMath, RevealZoom ]
+                                RevealMath.KaTeX, RevealZoom ]
             });
         </script>
         <!-- 1}}} -->

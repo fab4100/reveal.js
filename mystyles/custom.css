@@ -96,8 +96,13 @@
     margin-top: 8px;
 }
 
+.reveal .slides .katex { font-size: 1.16em; }
+
+.reveal .slides div .katex-display,
 .reveal .slides div .MathJax_Display {
-    margin: 16px;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 html.print-pdf .reveal pre code {
