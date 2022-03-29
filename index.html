@@ -22,6 +22,10 @@
     </head>
     <!-- 1}}} -->
     <body>
+        <script>
+            var show_notes = false;
+            var show_solutions = true;
+        </script>
         <!-- Slides {{{1 -->
         <div class="reveal">
             <div class="slides">
@@ -122,6 +126,31 @@ double parallel_pi(const int n)
                     <!-- Topic 1 {{{4 -->
                     <section>
                         <h2>Topic 1</h2>
+                        <div id="example1-solution"
+                             class="fragment"
+                             style="color:skyblue;visibility:hidden">
+                            The serial fraction is $f=0.6$ and the
+                            parallel fraction is $1-f=0.4$.  The new
+                            processor can do work 10 times faster so
+                            $p=10$:
+                            <div>
+                                \[
+                                S_{10} = \frac{1}{0.6 + \frac{0.4}{10}}
+                                \approx 1.56.
+                                \]
+                            </div>
+                            The efficiency in this case is 15.6% which
+                            will allow you to make a judgement whether
+                            it is reasonable to buy the new processor
+                            given its current price.
+                        </div>
+                        <script>
+                            var node;
+                            if (show_solutions) {
+                                node = document.getElementById('example1-solution');
+                            }
+                            node.style.visibility = 'visible';
+                        </script>
                     </section>
                     <!-- 4}}} -->
                     <!-- Topic 2 {{{4 -->
@@ -159,7 +188,7 @@ double parallel_pi(const int n)
             Reveal.initialize({
                 center: false,
                 // disableLayout: true,
-                // showNotes: true,
+                showNotes: show_notes,
                 // showSlideNumber: 'print',
                 pdfSeparateFragments: false,
                 pdfMaxPagesPerSlide: 1,
