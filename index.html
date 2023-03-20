@@ -24,6 +24,7 @@
     <body>
         <script>
             var show_notes = false;
+            var slide_numbers = false; // or 'c/t' or 'c'
             var show_solutions = true;
         </script>
         <!-- Slides {{{1 -->
@@ -189,7 +190,7 @@ double parallel_pi(const int n)
                 center: false,
                 // disableLayout: true,
                 showNotes: show_notes,
-                // slideNumber: 'c/t',
+                slideNumber: slide_numbers,
                 pdfSeparateFragments: false,
                 pdfMaxPagesPerSlide: 1,
                 hash: true,
