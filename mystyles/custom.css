@@ -3,6 +3,8 @@
 /* Author     : Fabian Wermelinger */
 /* Description: Customizations */
 /* Copyright 2021 Fabian Wermelinger. All Rights Reserved. */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700,400italic,700italic);
+
 :root {
   /* --r-background-color: #fdf6e3; */
   --r-background-color: #ffffff;
